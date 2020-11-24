@@ -177,15 +177,7 @@
 
 <script>
     const mapToken = "<%-process.env.MAPBOX_TOKEN%>";
+    const campground = <%- JSON.stringify(campground) %>
 </script>
 
-<script>
-    mapboxgl.accessToken = mapToken;
-    const map = new mapboxgl.Map({
-        container: "map",
-        style: "mapbox://styles/mapbox/streets-v11", // stylesheet location
-        center: [-74.5, 40], // starting position [lng, lat]
-        zoom: 8, // starting zoom
-    });
-    const marker = new mapboxgl.Marker().setLngLat([-74.5, 40]).addTo(map);
-</script>
+<script src="/javascripts/showPageMap.js"></script>
