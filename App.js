@@ -16,7 +16,7 @@ const LocalStrategy = require("passport-local");
 const User = require("./models/user");
 
 const userRoutes = require("./routes/users");
-const campgroundRoutes = require("./routes/campground");
+const campgroundRoutes = require("./routes/campgrounds");
 const reviewRoutes = require("./routes/reviews");
 
 mongoose.connect("mongodb://localhost:27017/campo", {
